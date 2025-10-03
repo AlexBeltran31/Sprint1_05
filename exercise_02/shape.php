@@ -11,14 +11,14 @@ abstract class Shape {
         $this->width = $width;
         $this->height = $height;
     }
-    abstract public function getArea();
+    abstract public function calculateArea();
 }
 
 $triangle = new Triangle(10, 5);
-echo "Triangle area: " . $triangle->getArea() . "\n";
+echo "Triangle area: " . $triangle->calculateArea() . "\n";
 
 $rectangle = new Rectangle(30, 15);
-echo "Rectangle area: " . $rectangle->getArea() . "\n";
+echo "Rectangle area: " . $rectangle->calculateArea() . "\n";
 
 $circle = new Circle(12);
-echo "Circle area: " . $circle->getArea() . "\n";
+echo "Circle area: " . $circle->calculateArea() . "\n";

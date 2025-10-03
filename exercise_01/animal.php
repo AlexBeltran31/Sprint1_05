@@ -1,9 +1,10 @@
 <?php
-$s = require_once('cat.php');
-$s = require_once('dog.php');
+require "cat.php";
+require "dog.php";
 
 abstract class Animal {
     private string $name;
+    
     public function __construct(string $name) {
         $this->name = $name;
     }

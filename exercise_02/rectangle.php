@@ -1,6 +1,6 @@
 <?php
 class Rectangle extends Shape {
-    public function getArea() {
+    public function calculateArea() {
         return $this->width * $this->height;
     }
 }

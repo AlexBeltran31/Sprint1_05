@@ -4,7 +4,7 @@ class Circle extends Shape {
         parent::__construct($radio, 0); //guardamos el radio en width
         //ya que la clase padre espera dos parametros
     }
-    public function getArea() {
+    public function calculateArea() {
         $pi = 3.1415;
         $area = $pi * ($this->width * $this->width);
         return $area;
